@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(252, 172, 255);
+    color: rgb(247, 247, 247);
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+p{
+    line-height: 1.5;
+}
+
+article + article{
+    margin-top: 3rem;
+    padding-top: 3red;
+    border-top: 1px solid rgb(150, 91, 145);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 3px solid rgb (150, 91, 145);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(150, 91, 145, 0.237);
+}
+
+.card-header {
+    background-color: rgba(150, 91, 145);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(150, 91, 145);
+    border-radius: 7px 7px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control_2 {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.col-md-4 {
+    text-align: right;
+}
+
+.btn-primary {
+    background-color: rgb(150, 91, 145);
+    border-color: rgb(150, 91, 145);
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.215);
+    border-color: rgb(150, 91, 145);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .col-md-4 {
+        text-align: left;
+    }
+}

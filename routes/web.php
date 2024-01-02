@@ -22,13 +22,16 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-
-
+Route::get('/api/data', function () {
+    $data = Post::latest()->with('category')->get();
+    return response()->json($data);
+});
 
 Route::get('/', function () {
     if(Auth::check()){
         return redirect('/login');
     }else{
+        
        return view('posts',['posts'=> Post::latest()->with('category')->get()]); 
     }
     

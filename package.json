@@ -3,15 +3,23 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build:sass": "sass resources/sass/app.scss public/css/app.css"
     },
     "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@types/react": "^18.2.45",
+        "@types/react-dom": "^18.2.18",
+        "@vitejs/plugin-react": "^4.2.1",
         "axios": "^1.6.1",
         "laravel-vite-plugin": "^1.0.0",
+        "sass": "^1.56.1",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.3.3",
         "vite": "^5.0.0"
     },
     "dependencies": {
-        "@vitejs/plugin-react": "^4.2.1",
+        "bootstrap": "^5.3.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     }
